@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            width: 100%;
+            height: 100%;
+           
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #011627;
+            color: #fdfffc;
+            /* text-align: center;
+            justify-content: center; */
+
+            
+        }
+        .mm{
+            border: 2px solid palegreen;
+            display: block;
+        }
+
+        input{
+ 
+            width: 50px;
+            height: 40px;
+            font-size: 30px;
+            border-radius: 4px;
+            margin: 2px;
+            padding: 2px;
+            background-color: white;
+            color: black;
+        }
+        .btn:hover{
+            background-color: palegoldenrod;
+
+        }
+        h1{
+            font-size: 20px;
+            color: black;
+            margin-left :-130px ;
+            font-style: italic;
+        }
+        .cont{
+          
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+        }
+        .calc{
+            margin-top: 130px;
+            background-color: rgb(103, 182, 100);
+            padding: 15px;
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 12px ,5px 5px 12px rgba(0, 0,0,0.14);
+            display: grid;
+        }
+    </style>
+
+</head>
+<body>
+   
+        
+        <div class="cont">
+        <div class="calc">
+            <h1> Calculator</h1>
+
+        <form action="" name="clc">
+            <input class="btn" name="display" style="width: 210px; height: 33px; margin: 6px; background-color: rgb(128, 132, 132);;"><br>
+            <input class="btn" type="button" value="AC" onclick="clc.display.value =''" style="background-color: aqua; color: rgb(0, 236, 39);">
+            <input class="btn" type="button" value="&#8730" onclick="clc.display.value +=''">
+            <input class="btn" type="button" value="%" onclick="clc.display.value +='%'">
+            <input class="btn" type="button" value="." onclick="clc.display.value +='.'" style="background-color:aqua; color: rgb(0, 236, 39);" ><br>
+            <input class="btn" type="button" value="0" onclick="clc.display.value +='0'">
+            <input class="btn" type="button" value="1" onclick="clc.display.value +='1'">
+            <input class="btn" type="button" value="2" onclick="clc.display.value +='2'">
+            <input class="btn" type="button" value="+" onclick="clc.display.value +='+'" style="background-color: aqua; color: rgb(0, 236, 39);"><br>
+            <input class="btn" type="button" value="3" onclick="clc.display.value +='3'">
+            <input class="btn" type="button" value="4" onclick="clc.display.value +='4'">
+            <input class="btn" type="button" value="5" onclick="clc.display.value +='5'">
+            <input class="btn" type="button" value="-" onclick="clc.display.value +='-'" style="background-color: aqua; color: rgb(0, 236, 39);"><br>
+            <input class="btn" type="button" value="6" onclick="clc.display.value +='6'">
+            <input class="btn" type="button" value="7" onclick="clc.display.value +='7'">
+            <input class="btn" type="button" value="8" onclick="clc.display.value +='8'">
+            <input class="btn" type="button" value="*" onclick="clc.display.value +='*'" style="background-color:aqua;color: rgb(0, 236, 39);"><br>
+            <input class="btn" type="button" value="9" onclick="clc.display.value +='9'">
+            <input class="btn" type="button" value="00" onclick="clc.display.value +='00'">
+            <input class="btn" type="button" value="=" onclick="clc.display.value =eval(clc.display.value)" style="background-color:aqua;color: rgb(0, 236, 39);">
+            <input class="btn" type="button" value="&#247" onclick="clc.display.value +='/'" style="background-color:aqua;color: rgb(0, 236, 39);">
+        </form>
+    </div>
+</div>
+
+
+    
+</body>
+</html>
